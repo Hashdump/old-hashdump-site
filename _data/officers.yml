@@ -1,26 +1,23 @@
 currentYear: 2014
 emails:
-  - President: president {at} hashdump {dot} org
-    VicePresident: vicepresident {at} hashdump {dot} org
-    Treasurer: treasurer {at} hashdump {dot} org
-    Secretary: secretary {at} hashdump {dot} org
-    Webmaster: webmaster {at} hashdump {dot} org
-    Officers: officers {at} hashdump {dot} org
+  President: president {at} hashdump {dot} org
+  VicePresident: vicepresident {at} hashdump {dot} org
+  Treasurer: treasurer {at} hashdump {dot} org
+  Secretary: secretary {at} hashdump {dot} org
+  Webmaster: webmaster {at} hashdump {dot} org
+  Officers: officers {at} hashdump {dot} org
 years:
-  - year: 2014
-    officers:
-      - President: Cale Black "TerrorByte"
-        VicePresident: Andy
-        Treasurer: Caleb
-        Secretary: Jake
-        Webmaster: Nick Currier "hexid"
-  - year: 2013
-    officers:
-      - President: Cale Black "TerrorByte"
-        VicePresident: "cryptdough"
-        Treasurer: "solidus"
-        Secretary: "techis"
-        Webmaster: Cale Black "TerrorByte" / "cryptdough"
-  - year: 2012
-    officers:
-      - President: "xunil"
+  2014:
+    President: Cale Black "TerrorByte"
+    VicePresident: Andy
+    Treasurer: Caleb
+    Secretary: Jake
+    Webmaster: Nick Currier "hexid"
+  2013:
+    President: Cale Black "TerrorByte"
+    VicePresident: "cryptdough"
+    Treasurer: "solidus"
+    Secretary: "techis"
+    Webmaster: Cale Black "TerrorByte" / "cryptdough"
+  2012:
+    President: "xunil"
