@@ -4,14 +4,10 @@ overview: true
 ---
 ## Colorado State University's computer security club.
 
-This is all the Coffeescript we use on our site...
-Just double click on `code blocks` to toggle line numbers on/off
+Hashdump is the computer security club at Colorado State University. We participate and put on numerous security competitions every year, and attempt to facillitate a better understanding of security as a whole. All majors and experience levels are welcome to join and participate.
 
-~~~ coffeescript
-window.onload = ->
-  [].forEach.call document.querySelectorAll(".highlight"), (el) ->
-    el.ondblclick = (e) ->
-      (window.getSelection()).removeAllRanges() if window.getSelection
-      el.classList.toggle 'hidelinenos'
-    el.innerHTML = el.innerHTML.replace(/<span class="lineno">(\s*\d+)<\/span> /gm, '<span class="lineno">$1 </span>');
-~~~
+We meet every Tuesday at 5:00 PM in the Computer Science Building 315. A current schedule is posted below:
+
+| Date | Title | Notes |
+| ---- | ----- | ----- |{% for meeting in site.posts %}
+| [{{ meeting.date | date: "%-d %B %Y" }}]({{ meeting.url }}) | {{ meeting.title }} | {{ meeting.tagline }} |{% endfor %}
