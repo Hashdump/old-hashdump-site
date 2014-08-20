@@ -1,0 +1,14 @@
+$default-prefixes: webkit moz ms o;
+
+@mixin prefix-values($property, $value, $prefixes: $default-prefixes) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: #{$value};
+  }
+  #{$property}: #{$value};
+}
+@mixin sub-prefix-values($property, $subproperty, $value, $prefixes: $default-prefixes) {
+  @each $prefix in $prefixes {
+    #{$property}: -#{$prefix}-#{$subproperty}unquote("("#{$value}")");
+  }
+  #{$property}: #{$subproperty}unquote("("#{$value}")");
+}

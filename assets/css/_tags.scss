@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font: $fontsize $fontfamily;
+  line-height: 18px;
+  color: $textcolor;
+
+  @media (max-width: $smallpage-limit) {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+body, html {
+  height: 100%;
+  background-color: #2a2a2a;
+  background: url(../img/body.png);
+}
+
+a {
+  color: $linkcolor;
+  text-decoration: none;
+
+  &:focus {
+    outline: thin dotted #333333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+  &:hover {
+    color: $linkcolor-hover;
+    text-decoration: none;
+  }
+  &:hover, &:active {
+    outline: 0;
+  }
+}
+
+pre {
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 9px;
+  line-height: 18px;
+  overflow-x: auto;
+  @include prefix-values('border-radius', '4px', webkit moz);
+
+  code {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    @include prefix-values('box-shadow', 'none', webkit moz);
+  }
+}
+input, select, textarea, code, pre {
+  font: $fontsize-mono $fontfamily-mono;
+  background: #202020;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+p {
+  margin: 0 0 9px;
+
+  small {
+    font-size: 11px;
+    color: #999999;
+  }
+}
+small {
+  font-size: 100%;
+}
+
+sub, sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+ul, ol {
+  padding: 0;
+  margin: 0 0 9px 25px;
+}
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: $headingcolor;
+  text-rendering: optimizelegibility;
+  font-weight: normal;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-weight: normal;
+  color: $headingcolor-small;
+}
+h1, h2 {
+  margin: 0 0 15px;
+}
+h1 {
+  font-size: 40px;
+  line-height: 36px;
+  small {
+    font-size: 18px;
+  }
+}
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+  small {
+    font-size: 18px;
+  }
+}
+h3 {
+  font-size: 18px;
+  line-height: 27px;
+  small {
+    font-size: 14px;
+  }
+}
+h4, h5, h6 {
+  line-height: 18px;
+}
+h4 {
+  font-size: 14px;
+  small {
+    font-size: 12px;
+  }
+}
+h5 {
+  font-size: 12px;
+}
+h6 {
+  font-size: 11px;
+  color: #999999;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}

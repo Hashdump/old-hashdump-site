@@ -1,0 +1,43 @@
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables", "hard_wrap"]
+
+tags:
+  highlight:
+    linenos: true
+
+sass:
+  style: :compressed
+  sass_dir: assets/css
+
+relative_permalinks: false
+title: Hashdump
+repository: https://github.com/Hashdump/hashdump.github.io
+timezone: America/Denver
+baseurl: ""
+
+permalink: /meetings/:year/:month/:day/:title.html
+
+collections:
+  index:
+    output: true
+    permalink: :path/
+  about:
+    output: true
+  wiki:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+  - scope:
+      path: "meetings"
+    values:
+      layout: "meeting"
+  - scope:
+      path: "wiki"
+    values:
+      layout: "wiki"

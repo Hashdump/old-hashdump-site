@@ -1,0 +1,23 @@
+- title: Exploitation
+  url: exploits
+
+- title: General
+  url: general
+
+- title: Linux
+  url: linux
+
+- title: Misc.
+  url: misc
+
+- title: Security
+  url: security
+
+- title: Tools
+  url: tools
+
+- title: Web
+  url: web
+
+- title: Wireless
+  url: wifi
