@@ -6,9 +6,9 @@ IRC (Internet Relay Chat) is a simple chatting system that also allows for chat 
 
 ## Hashdump IRC Info
 
-Server: `irc.freenode.net`
+Server:  `irc.freenode.net`
 
-Channel `#hashdump`
+Channel:  `#hashdump`
 
 We also provide a link in the navigation bar to a web based IRC client.
 
