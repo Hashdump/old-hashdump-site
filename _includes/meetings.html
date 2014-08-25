@@ -1,0 +1,23 @@
+{% if include.max %}
+  {% assign max = include.max %}
+{% else %}
+  {% assign max = -1 %}
+{% endif %}
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Title</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>{% for meeting in site.posts %}{% if max < 0 or max >= forloop.index %}
+    <tr>{% capture ms %}{{ meeting.content | size }}{% endcapture %}
+      <td><a {% if ms | blank %}class="disabled"{% else %}href="{{ meeting.url }}"{% endif %}>{{ meeting.date | date: "%-d %B %Y" }}</a></td>
+      <td>{{ meeting.title }}</td>
+      <td>{{ meeting.tagline }}</td>
+    </tr>
+    {% endif %}{% endfor %}
+  </tbody>
+</table>

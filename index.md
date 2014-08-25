@@ -8,6 +8,6 @@ Hashdump is the computer security club at Colorado State University. We particip
 
 We meet every Tuesday at 5:00 PM in the Computer Science Building 315. A current schedule is posted below:
 
-| Date | Title | Notes |
-| ---- | ----- | ----- |{% for meeting in site.posts %}
-| [{{ meeting.date | date: "%-d %B %Y" }}]({{ meeting.url }}) | {{ meeting.title }} | {{ meeting.tagline }} |{% endfor %}
+### Recent Meetings
+
+{% include meetings.html max=5 %}
