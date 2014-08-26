@@ -1,14 +1,11 @@
-- title: Hashdump
-  url: null
-
 - title: Wiki
-  url: wiki/
+  url: wiki
 
 - title: Meetings
-  url: meetings/
+  url: meetings
 
 - title: About
-  url: about/
+  url: about
 
 - title: IRC
   url: https://webchat.freenode.net/?channels=%23hashdump&uio=Mj10cnVlJjQ9dHJ1ZSY5PXRydWUmMTE9MjU2d9

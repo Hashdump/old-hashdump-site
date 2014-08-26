@@ -1,9 +1,10 @@
-<nav>
+<nav>{% assign url_pieces = page.url | split: '/'%}
   <div>
     <ul>
-      {% for nav in site.data.nav %}{% assign url_pieces = page.url | split: '/'%}
+      <li><b><a href="{{ site.baseurl }}/">Hashdump</a></b></li>
+      {% for nav in site.data.nav %}{% if nav.url contains 'http://' or nav.url contains 'https://' %}{% assign http = true %}{% endif %}
       <li{% if nav.url == url_pieces[1] %} class='active'{% endif %}>
-        <a{% if nav.url contains 'http://' or nav.url contains 'https://' %} class="external" target="_blank"{% endif %} href="{% unless nav.url contains 'http://' or nav.url contains 'https://' %}{{ site.baseurl }}/{% endunless %}{{ nav.url }}">{{ nav.title }}</a>
+        <a{% if http %} class="external" target="_blank"{% endif %} href="{% unless http %}{{ site.baseurl }}/{% endunless %}{{ nav.url }}">{{ nav.title }}</a>
       </li>{% endfor %}
     </ul>
   </div>
