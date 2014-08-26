@@ -7,7 +7,7 @@ main {
   *zoom: 1;
 
   @media (max-width: $smallpage-limit) {
-    padding: 0px 20px;
+    margin: 0 20px;
     width: auto;
   }
 }
