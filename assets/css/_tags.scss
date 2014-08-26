@@ -1,4 +1,7 @@
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   font: $fontsize $fontfamily;
   line-height: 18px;
@@ -10,7 +13,6 @@ body {
   }
 }
 body, html {
-  height: 100%;
   background-color: #2a2a2a;
   background: url(../img/body.png);
 }
