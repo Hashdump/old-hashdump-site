@@ -1,0 +1,8 @@
+{% for w in site.collections.wiki.docs %}
+{% assign url_pieces = w.url | split: '/' %}
+{% if url_pieces[2] == include.cat %}
+<li>
+  <a href="{{ site.baseurl }}{{ w.url }}">{{ w.title }}</a>{% if include.index and w.tagline %} - {{ w.tagline }}{% endif %}
+</li>
+{% endif %}
+{% endfor %}
