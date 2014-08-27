@@ -11,7 +11,7 @@
   </thead>
   <tbody>{% for meeting in site.posts %}{% if include.max < 0 or include.max >= forloop.index %}
     <tr>{% assign ms = meeting.content | strip_newlines | size %}
-      <td><a {% if ms == 0 %}class="disabled"{% else %}href="{{ meeting.url }}"{% endif %}>{{ meeting.date | date: "%-d %B %Y" }}</a></td>
+      <td>{% if ms != 0 %}<a href="{{ meeting.url }}">{% endif %}{{ meeting.date | date: "%-d %B %Y" }}{% if ms != 0 %}</a>{% endif %}</td>
       <td>{{ meeting.title }}</td>
       <td>{{ meeting.tagline }}</td>
     </tr>
