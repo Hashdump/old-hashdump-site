@@ -1,7 +1,11 @@
 ---
-layout: page
+layout: default
 ---
 {% assign cat = site.data.wiki | where: "title", page.title | first %}
+<header>
+  <h1>Wiki :: {{ page.title }} {% if page.tagline %}<small>{{ page.tagline }}</small>{% endif %}</h1>
+</header>
+
 <ul>
   {% include wiki.html cat=cat.url index=true %}
 </ul>
