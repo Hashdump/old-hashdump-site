@@ -8,10 +8,8 @@ The Hashdump wiki aims to provide information on security/technology topics that
 <div id="columns">
   {% for cat in site.data.wiki %}
   <div class="column">
-    <h2>{{ cat.title }}</h2>
-    <ul>{% for w in site.collections.wiki.docs %}{% assign url_pieces = w.url | split: '/' %}{% if url_pieces[2] == cat.url and url_pieces[3] != 'index.html' %}
-      <li><a href="{{ site.baseurl }}{{ w.url }}">{{ w.title }}</a></li>
-    {% endif %}{% endfor %}</ul>
+    <h2><a class="normal" href="{{ cat.url }}">{{ cat.title }}</a></h2>
+    <ul>{% include wiki.html cat=cat.url %}</ul>
   </div>
   {% endfor %}
 </div>

@@ -1,0 +1,9 @@
+---
+layout: page
+---
+{% assign cat = site.data.wiki | where: "title", page.title | first %}
+<ul>
+  {% include wiki.html cat=cat.url index=true %}
+</ul>
+
+{{ content }}

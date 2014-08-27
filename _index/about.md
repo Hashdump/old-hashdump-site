@@ -1,4 +1,5 @@
 ---
+layout: page
 title: About
 ---
 {% assign d = site.data.officers %}

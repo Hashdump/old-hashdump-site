@@ -41,3 +41,8 @@ defaults:
       path: "wiki"
     values:
       layout: "wiki"
+  - scope:
+      path: "wiki"
+      type: "index"
+    values:
+      layout: "wiki-category"

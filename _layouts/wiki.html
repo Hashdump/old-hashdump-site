@@ -4,6 +4,7 @@ layout: default
 {% assign url_parts = page.url | split:'/' %}
 {% assign cat = site.data.wiki | where:"url", url_parts[2] | first %}
 <header>
-  <h1>{{ page.title }} <small>{% if page.tagline %}{{ page.tagline}}{% else %}Wiki{% if cat.title %} :: {{ cat.title }}{% endif %}{% endif %}</small></h1>
+  <h1>{{ page.title }} <small>{% if page.tagline %}{{ page.tagline }}{% else %}Wiki{% if cat.title %} :: {{ cat.title }}{% endif %}{% endif %}</small></h1>
 </header>
+
 {{ content }}
