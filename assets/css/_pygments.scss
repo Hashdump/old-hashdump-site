@@ -1,4 +1,4 @@
-@import 'themes/pygments';
+@import 'themes/codeblocks';
 
 .highlight {
   color: $textcolor;
@@ -14,7 +14,7 @@
   }
 
   .hll {
-    background-color: $selection;
+    background-color: $cb-selection;
   }
 
   .gu, /* Generic.Subheading */
@@ -24,14 +24,14 @@
   .o, /* Operator */
   .ow, /* Operator.Word */
   {
-    color: $aqua;
+    color: $cb-aqua;
   }
 
   .na, /* Name.Attribute */
   .nf, /* Name.Function */
   .nx, /* Name.Other */
   {
-    color: $blue;
+    color: $cb-blue;
   }
 
   .c, /* Comment */
@@ -42,7 +42,7 @@
   .gp, /* Generic.Prompt */
   .sd, /* Literal.String.Doc */
   {
-    color: $comment;
+    color: $cb-comment;
   }
 
   .gi, /* Generic.Inserted */
@@ -56,7 +56,7 @@
   .s1, /* Literal.String.Single */
   .ss, /* Literal.String.Symbol */
   {
-    color: $green;
+    color: $cb-green;
   }
 
   .il, /* Literal.Number.Integer.Long */
@@ -69,7 +69,7 @@
   .se, /* Literal.String.Escape */
   .si, /* Literal.String.Interpol */
   {
-    color: $orange;
+    color: $cb-orange;
   }
 
   .k, /* Keyword */
@@ -78,7 +78,7 @@
   .kp, /* Keyword.Pseudo */
   .kr, /* Keyword.Reserved */
   {
-    color: $purple;
+    color: $cb-purple;
   }
 
   .bp, /* Name.Builtin.Pseudo */
@@ -91,7 +91,7 @@
   .vg, /* Name.Variable.Global */
   .vi, /* Name.Variable.Instance */
   {
-    color: $red;
+    color: $cb-red;
   }
 
   .gh, /* Generic.Heading */
@@ -111,7 +111,7 @@
   .nc, /* Name.Class */
   .nn, /* Name.Namespace */
   {
-    color: $yellow;
+    color: $cb-yellow;
   }
 
   .gh, /* Generic.Heading */
