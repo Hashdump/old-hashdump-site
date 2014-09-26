@@ -2,8 +2,7 @@
 title: SSH
 ---
 
-SSH or Secure SHell is a tool that allows a user remote access to a machine. It uses [[Encryption:PublicKeyCryptography|Public Key Cryptography]]
-to ensure a secure connection between the server and the client. Some of the cool features of SSH are:
+SSH or Secure SHell is a tool that allows a user remote access to a machine. It uses public key cryptography to ensure a secure connection between the server and the client. Some of the cool features of SSH are:
 
 * Remote terminal access
 * Connection proxies
@@ -193,6 +192,41 @@ You should ALWAYS set this to protocol 2 as protocol 1 has been broken and can r
 # Don't read the user's ~/.rhosts and ~/.shosts files
 #IgnoreRhosts yes
 ```
+## SCP
+
+SCP is a file transfer program that operates on top of SSH. The command structure is
+
+``` bash
+$ scp [options] [user@source_host:]file_path [user@destination_host:]file_path
+```
+
+Where the items in []'s are optional
+
+Examples:
+
+This will copy the local file 'Homework1.pdf' to Homework/cs356/hw1/Homework1.pdf on the host pea.cs.colostate.edu
+
+``` bash
+$ scp Homework1.pdf  campbell@pea.cs.colostate.edu:Homework/cs356/hw1
+campbell@pea.cs.colostate.edu's password:
+Homework1.pdf                                              100% 1280 0.9KB/s 00:01
+```
+
+
+This will copy the remote file 'Homework/cs457/notes/scp.txt' living on pea.cs.colostate.edu to the local directory 'school/cs457/scp.txt'
+
+```
+$ scp campbell@pea.cs.colostate.edu:Homework/cs457/notes/scp.txt school/cs457
+campbell@pea.cs.colostate.edu's password:
+scp.txt                                                    100% 743 0.5KB/s 00:00
+```
+
+### Common Options
+
+* -P &lt;port&gt; The remote server's port (note: P not p)
+* -o ssh_option
+  * -oPort=666
+  * -oIdentityFile=~/.ssh/id_rsa
 
 ## Upgrading to More Secure Keys
 
@@ -268,39 +302,3 @@ and then ssh to the port added to accept like so:
 ``` bash
 ssh -p 2200 localhost
 ```
-
-## SCP
-
-SCP is a file transfer program that operates on top of SSH. The command structure is
-
-``` bash
-$ scp [options] [user@source_host:]file_path [user@destination_host:]file_path
-```
-
-Where the items in []'s are optional
-
-Examples:
-
-This will copy the local file 'Homework1.pdf' to Homework/cs356/hw1/Homework1.pdf on the host pea.cs.colostate.edu
-
-``` bash
-$ scp Homework1.pdf  campbell@pea.cs.colostate.edu:Homework/cs356/hw1
-campbell@pea.cs.colostate.edu's password:
-Homework1.pdf                                              100% 1280 0.9KB/s 00:01
-```
-
-
-This will copy the remote file 'Homework/cs457/notes/scp.txt' living on pea.cs.colostate.edu to the local directory 'school/cs457/scp.txt'
-
-```
-$ scp campbell@pea.cs.colostate.edu:Homework/cs457/notes/scp.txt school/cs457
-campbell@pea.cs.colostate.edu's password:
-scp.txt                                                    100% 743 0.5KB/s 00:00
-```
-
-### Common Options
-
-* -P &lt;port&gt; The remote server's port (note: P not p)
-* -o ssh_option
-  * -oPort=666
-  * -oIdentityFile=~/.ssh/id_rsa
