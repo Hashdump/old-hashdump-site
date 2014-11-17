@@ -1,5 +1,5 @@
 ---
-title: Linux Hardening: IPv6
+title: Linux Hardening IPv6
 ---
 # IPv6
 As with all services and programs, if you are not going to use it in production you should not have it installed or responding. If you are running IPv6 on the server then go to the `Disable Portions` section or if you do not want IPv6 at all you should see `Completely Disable`

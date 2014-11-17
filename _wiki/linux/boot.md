@@ -1,5 +1,5 @@
 ---
-title: Linux Hardening: Boot
+title: Linux Hardening Boot
 ---
 # Boot
 ## Ownership

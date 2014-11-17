@@ -1,5 +1,5 @@
 ---
-title: Linux Hardening: Packages
+title: Linux Hardening Packages
 ---
 # Packages
 Keeping things up to date is obviously important.
