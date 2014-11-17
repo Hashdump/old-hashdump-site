@@ -10,13 +10,13 @@ This is a general hardening guide for Linux. Think of it as more of a cheat shee
 Check ownership on the grub configuration (this assumes grub is used).
 
 ``` bash
-stat -c "%u%g" /boot/grub/grub.cfg
+$ stat -c "%u%g" /boot/grub/grub.cfg
 ```
 
 If the above prints '00' you are fine and it means root owns the file. If it prints anything else run:
 
 ``` bash
-chown root:root /boot/grub/grub.conf
+$ chown root:root /boot/grub/grub.conf
 ```
 
 If the ownership of the grub configuration file is another user that user can arbitrarily change boot parameters that could lead to escalation. For example, if the attacker used `init=/bin/bash` in the config they would boot into essentially single user mode with escalated priveledge. They could also arbitrarily change boot parameters in general. For example they could disable stack protections or SELinux.
@@ -24,27 +24,27 @@ If the ownership of the grub configuration file is another user that user can ar
 Check permissions on the grub configuration.
 
 ``` bash
-stat -L -c "%a" /boot/grub/grub.cfg | cut -c 2-
+$ stat -L -c "%a" /boot/grub/grub.cfg | cut -c 2-
 ```
 
 If the above prints '00' you are good. Or else the permissions are wrong as no one other than root should have access to the boot partition.
 
 ``` bash
-chmod og-rwx /boot/grub/grub.cfg
+$ chmod og-rwx /boot/grub/grub.cfg
 ```
 
 ## Bootloader Password
 By setting a password in grub it forces a password to be entered before command line boot options can be set. This prevents an attacker with physical access or access to virtual console from arbitrarily setting bootloader arguments. To check if this option is set run:
 
 ``` bash
-grep "^set superusers" /boot/grub/grub.cfg
-grep "^password" /boot/grub/grub.cfg
+$ grep "^set superusers" /boot/grub/grub.cfg
+$ grep "^password" /boot/grub/grub.cfg
 ```
 
 If neither of those print anything you can set a password with:
 
 ``` bash
-grub-mkpasswd-pbdkf2
+$ grub-mkpasswd-pbdkf2
 Enter password: $PASSWORD
 Reenter password: $PASSWORD
 Your PBDKF2 is $ENC_PASSWORD
@@ -71,7 +71,7 @@ As with all services and programs, if you are not going to use it in production 
 If this is allowed an attacker may be able to trick a machine into routing traffic to a place they did not intend. Run the follwing:
 
 ``` bash
-\# sysctl net.ipv6.conf.all.accept_ra
+$ sysctl net.ipv6.conf.all.accept_ra
 
 ```
 
