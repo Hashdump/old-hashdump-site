@@ -71,7 +71,7 @@ As with all services and programs, if you are not going to use it in production 
 If this is allowed an attacker may be able to trick a machine into routing traffic to a place they did not intend. Run the follwing:
 
 ``` bash
-# sysctl net.ipv6.conf.all.accept_ra
+\# sysctl net.ipv6.conf.all.accept_ra
 
 ```
 
