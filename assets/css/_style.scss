@@ -111,17 +111,13 @@ header {
 }
 
 #columns {
-  @include prefix-values('column-width', '200px', webkit moz);
+  @include prefix-values('column-width', '285px', webkit moz);
   @include prefix-values('column-gap', '20px', webkit moz);
   @include prefix-values('column-rule', '1px solid #000000', webkit moz);
 
   .column {
-    @include prefix-values('column-break-inside', 'avoid', webkit moz);
+    @include prefix-values('column-break-inside', 'avoid', webkit);
     @include prefix-values('page-break-inside', 'avoid', moz);
-
-		ul, ol {
-			@include prefix-values('column-break-insize', 'avoid', webkit moz);
-			@include prefix-values('page-break-inside', 'avoid', moz);
-		}
+		break-inside: avoid;
   }
 }
