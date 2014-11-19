@@ -118,5 +118,10 @@ header {
   .column {
     @include prefix-values('column-break-inside', 'avoid', webkit moz);
     @include prefix-values('page-break-inside', 'avoid', moz);
+
+		ul, ol {
+			@include prefix-values('column-break-insize', 'avoid', webkit moz);
+			@include prefix-values('page-break-inside', 'avoid', moz);
+		}
   }
 }
