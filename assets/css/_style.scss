@@ -119,5 +119,6 @@ header {
     @include prefix-values('column-break-inside', 'avoid', webkit);
     @include prefix-values('page-break-inside', 'avoid', moz);
 		break-inside: avoid;
+		position: relative;
   }
 }
