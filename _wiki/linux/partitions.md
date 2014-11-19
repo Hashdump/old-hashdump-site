@@ -20,6 +20,7 @@ partition       | noexec | nodev | nosuid | location
 /run/shm        | yes    | yes   | yes    | /run/shm
 External Media  | yes    | yes   | yes    | /dev/*
 
+
 A note, `/var/tmp` should be pointing to `/tmp`, this can be done by editing `/etc/fstab` to include:
 
 ```
