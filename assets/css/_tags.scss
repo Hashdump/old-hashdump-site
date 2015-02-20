@@ -38,6 +38,9 @@ a {
     color: inherit;
     text-decoration: underline;
   }
+  &.external:after {
+    content: "⇗";
+  }
 }
 
 pre {
