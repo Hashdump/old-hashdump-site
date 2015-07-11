@@ -2,7 +2,8 @@
 title: Linux Hardening Boot
 ---
 # Boot
-## Ownership
+## Grub
+### Ownership
 Check ownership on the grub configuration (this assumes grub is used).
 
 ``` bash
@@ -29,7 +30,7 @@ If the above prints '00' you are good. Or else the permissions are wrong as no o
 $ chmod og-rwx /boot/grub/grub.cfg
 ```
 
-## Bootloader Password
+### Bootloader Password
 By setting a password in grub it forces a password to be entered before command line boot options can be set. This prevents an attacker with physical access or access to virtual console from arbitrarily setting bootloader arguments. To check if this option is set run:
 
 ``` bash
@@ -53,6 +54,6 @@ set superusers="$USERNAME,$USERNAME2,$USERNAMEN"
 password_pbdkf2 $USERNAME $ENC_PASSWORD
 ```
 
-## /boot Size
-A note that /boot should be in a seperate partition to control its size so that an attacker could cause an issue in generating the initrd that causes system failure. See the partition section for more info.
+### /boot Size
+A note that /boot should be in a seperate partition to control its size so that an attacker could cause an issue in generating the initrd that causes system failure or consume disk space. See the partition section for more info.
 
