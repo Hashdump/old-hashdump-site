@@ -1,7 +1,7 @@
 ---
 title: Linux Hardening Guide
 ---
-This is a general hardening guide for Linux. Think of it as more of a cheat sheet or reference than a definitive checklist. Do NOT use all of these in production, use your standard operating procedure. This guide assumes escalated priveledges, if something does not work escalate priveledges.
+This is a general hardening guide for Linux. Think of it as more of a cheat sheet or reference than a definitive checklist. Do NOT use all of these in production, use your standard operating procedure and actually understand what is going on here.
 
 - [Boot]({{ site.url }}/wiki/linux/hardening/boot.html)
 - [IPv6]({{ site.url }}/wiki/linux/hardening/ipv6.html)
@@ -11,3 +11,7 @@ This is a general hardening guide for Linux. Think of it as more of a cheat shee
 - [Permissions]({{ site.url }}/wiki/linux/hardening/permissions.html)
 - [Servies]({{ site.url }}/wiki/linux/hardening/services.html)
 - [Users]({{ site.url }}/wiki/linux/hardening/users.html)
+
+See also:
+
+- [Grsec]({{ site.url }}/wiki/linux/grsec.html)
