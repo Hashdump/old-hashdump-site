@@ -9,7 +9,7 @@ The Hashdump wiki aims to provide information on security/technology topics that
   {% for cat in site.data.wiki %}
   <div class="column">
     <h2><a class="normal" href="{{ cat.url }}">{{ cat.title }}</a></h2>
-    <ul>{% include wiki.html cat=cat.url %}</ul>
+    <ul>{% include wiki.html cat=cat.url depth=1 %}</ul>
   </div>
   {% endfor %}
 </div>
