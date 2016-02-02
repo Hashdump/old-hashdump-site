@@ -1,10 +1,6 @@
 highlighter: rouge
 markdown: kramdown
 
-tags:
-  highlight:
-    linenos: true
-
 sass:
   style: :compressed
   sass_dir: assets/css
