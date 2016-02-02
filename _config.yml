@@ -1,6 +1,8 @@
 highlighter: rouge
 markdown: kramdown
 
+future: true
+
 sass:
   style: :compressed
   sass_dir: assets/css
