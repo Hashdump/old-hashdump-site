@@ -1,5 +1,5 @@
 highlighter: pygments
-markdown: redcarpet
+markdown: kramdown
 redcarpet:
   extensions: ["tables", "hard_wrap"]
 
