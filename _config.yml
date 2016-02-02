@@ -1,7 +1,5 @@
 highlighter: rouge
-markdown: redcarpet
-redcarpet:
-  extensions: ["tables", "hard_wrap"]
+markdown: kramdown
 
 tags:
   highlight:
