@@ -13,7 +13,7 @@ repository: https://github.com/Hashdump/hashdump.github.io
 timezone: America/Denver
 baseurl: ""
 
-permalink: /meetings/:year/:month/:day/:title.html
+permalink: /meetings/:year/:month/:day/:title:output_ext
 
 collections:
   index:
