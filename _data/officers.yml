@@ -1,4 +1,4 @@
-currentYear: 2015
+currentYear: 2016
 emails:
   President: president {at} hashdump {dot} org
   VicePresident: vicepresident{at}hashdump{dot}org
@@ -7,12 +7,18 @@ emails:
   Webmaster: webmaster {at} hashdump {dot} org
   Officers: officers {at} hashdump {dot} org
 years:
+  2016:
+    President: Stephen Walker-Weinshenker
+    VicePresident: Caleb Begly
+    Treasurer: Austin Hunting
+    Secretary: Christopher William Westerman
+    Webmaster: Gerhard Van Andel
   2015:
     President: Caleb Begly
     VicePresident: Pierce Douglas
     Treasurer: Andy Ingle
     Secretary: Stephen Walker-Weinshenker
-    Webmaster: gillz
+    Webmaster: Gerhard Van Andel
   2014:
     President: Cale Black "TerrorByte"
     VicePresident: Andy
