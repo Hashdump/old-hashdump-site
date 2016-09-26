@@ -9,7 +9,6 @@ We meet every Tuesday at 5:00 PM in the Computer Science Building 315. A current
 
 ## Announcements
 
-+ CSAW CTF'16 : September 16 (6PM EDT) - September 18 (6PM EDT)
 + BSides Denver 2016 : October 8 
 
 
