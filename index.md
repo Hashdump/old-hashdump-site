@@ -9,7 +9,7 @@ We meet every Tuesday at 5:00 PM in the Computer Science Building 315. A current
 
 ## Announcements
 
-+ Hack the Vote CTF: Nov 4-6
+#+ Hack the Vote CTF: Nov 4-6
 
 
 ## Recent Meetings
