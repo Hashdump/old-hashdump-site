@@ -9,6 +9,9 @@
 
 - title: IRC
   url: https://webchat.freenode.net/?channels=%23hashdump&uio=Mj10cnVlJjQ9dHJ1ZSY5PXRydWUmMTE9MjU2d9
+  
+- title: Slack
+  url: https://hashdump.slack.com
 
 - title: Github
   url: http://github.com/hashdump
