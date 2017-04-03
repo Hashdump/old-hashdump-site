@@ -9,7 +9,6 @@ We meet every Tuesday at 5:30 PM in the Computer Science Building 315. A current
 
 ## Announcements
 
-+ [RMCCDC Spring 2017](http://rmccdc.regis.edu)
 
 
 ## Recent Meetings
