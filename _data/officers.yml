@@ -1,4 +1,4 @@
-currentYear: 2016
+currentYear: 2017
 emails:
   President: president {at} hashdump {dot} org
   VicePresident: vicepresident{at}hashdump{dot}org
@@ -7,6 +7,12 @@ emails:
   Webmaster: webmaster {at} hashdump {dot} org
   Officers: officers {at} hashdump {dot} org
 years:
+  2017:
+    President: Stephen Walker-Weinshenker
+    VicePresident: Matt Erle
+    Treasurer: Noah Cain
+    Secretary: Stephen Walker-Weinshenker
+    Webmaster: Stephen Walker-Weinshenker
   2016:
     President: Stephen Walker-Weinshenker
     VicePresident: Caleb Begly
