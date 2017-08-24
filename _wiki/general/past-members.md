@@ -11,6 +11,7 @@ If you would like your name removed from this list, please email the webmaster o
 |Name|Highest Officer Position Held (if known)|IRC Handle (if known)|
 |----|-----------------------------|---------------------|
 |Addy Moran|||
+|Andy Ingle|Treasurer||
 |Alex De Croix|||
 |Alex Shultz|||
 |Aly Ammar|||
@@ -22,3 +23,4 @@ If you would like your name removed from this list, please email the webmaster o
 |Chance Warren|||
 |Christopher Campbell|||
 |Christopher Westerman|Secretary||
+|Pierce Douglas|Vice President||
