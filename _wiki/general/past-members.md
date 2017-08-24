@@ -8,6 +8,17 @@ If you would like your name removed from this list, please email the webmaster o
 ## List of Past Club Members
 
 
-|Name|Highest Officer Position Held|IRC Handle (if known)|
+|Name|Highest Officer Position Held (if known)|IRC Handle (if known)|
 |----|-----------------------------|---------------------|
+|Addy Moran|||
+|Alex De Croix|||
+|Alex Shultz|||
+|Aly Ammar|||
+|Andrew Hendrickson|||
+|Austin Hunting|Treasurer||
+|Ben Carter|||
 |Cale Black|President|poptart|
+|Carter Ross|||
+|Chance Warren|||
+|Christopher Campbell|||
+|Christopher Westerman|Secretary||
