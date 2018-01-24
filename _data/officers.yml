@@ -1,4 +1,4 @@
-currentYear: 2017
+currentYear: 2018
 emails:
   President: president {at} hashdump {dot} org
   VicePresident: vicepresident{at}hashdump{dot}org
@@ -7,6 +7,12 @@ emails:
   Webmaster: webmaster {at} hashdump {dot} org
   Officers: officers {at} hashdump {dot} org
 years:
+  2018:
+    President: Matt Erle
+    VicePresident: Stephen Walker-Weinshenker
+    Treasurer: Ethan Coldren
+    Secretary: Ethan Hendricks
+    Webmaster: Susanna Kyler
   2017:
     President: Stephen Walker-Weinshenker
     VicePresident: Matt Erle
