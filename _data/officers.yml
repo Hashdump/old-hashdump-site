@@ -5,6 +5,7 @@ emails:
   Treasurer: treasurer {at} hashdump {dot} org
   Secretary: secretary {at} hashdump {dot} org
   Webmaster: webmaster {at} hashdump {dot} org
+  SysAdmin: sysadmin {at} hashdump {dot} org
   Officers: officers {at} hashdump {dot} org
 years:
   2018:
@@ -13,6 +14,7 @@ years:
     Treasurer: Ethan Coldren
     Secretary: Ethan Hendricks
     Webmaster: Susanna Kyler
+    SysAdmin: Jordan Peterson
   2017:
     President: Stephen Walker-Weinshenker
     VicePresident: Matt Erle
