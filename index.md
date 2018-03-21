@@ -8,6 +8,7 @@ We participate and put on numerous security competitions every year, and attempt
 We meet every Tuesday at 6:30 PM in the Computer Science Building 315. A current schedule is posted below:
 
 ## Announcements
+Congratulations to our 2018 [RMCCDC](http://rmccdc.regis.edu/) team on winning second place! 
 
 
 
