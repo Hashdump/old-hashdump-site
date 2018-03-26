@@ -1,4 +1,4 @@
 hashdump.github.io
 ==================
 
-Hashdump Wiki
+This is the backend for http://hashdump.org and our associated wiki
