@@ -12,5 +12,5 @@ Congratulations to our 2018 [RMCCDC](http://rmccdc.regis.edu/) team on winning s
 
 
 
-## Recent Meetings
+## Upcoming Meetings
 {% include meetings.html max=5 %}
