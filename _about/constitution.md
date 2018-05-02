@@ -35,7 +35,7 @@ __Section 7. Removal of Members__: Members can be removed from this club upon th
 
 ### ARTICLE IV. - ELECTED OFFICERS
 
-__Section 1. Officers__: President, Vice-President, Secretary, Webmaster, and Treasurer
+__Section 1. Officers__: President, Vice-President, Secretary, Systems Administrator, Webmaster, and Treasurer
 
 __Section 2. Duties of Officers__:
 
