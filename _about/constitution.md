@@ -23,7 +23,7 @@ __Section 2. Associate Members__: Associate membership is open to faculty and in
 
 __Section 3. Alumni Members__: Alumni membership is open to former CSU students who were members of the organization; they may not vote or hold office.
 
-__Section 4. Membership Rules of Order__: We expect members to be dedicated to the mission of supporting the Security Club, to be friendly and open-minded, to work hard and to ascribe to the highest professional standards of conduct. Colorado State University's recognized student organizations shall not deny membership to any student on the basis of race, age, color, religion, national origin, gender, disability, sexual orientation, veteran status or disability.
+__Section 4. Membership Rules of Order__: We expect members to be dedicated to the mission of supporting the Security Club, to be friendly and open-minded, to work hard and to ascribe to the highest professional standards of conduct. As a recognized student organization at Colorado State University, our organization shall not deny membership to any student on the basis of race, age, creed, color, religion, national origin or ancestry, sex, gender, disability, veteran status, genetic information, sexual orientation, gender identity or expression, or pregnancy.
 
 __Section 5. Duties of Members__: It is a member's responsibility to participate in club events and provide constructive feedback. A member shall be responsible for using the information shared in this club in a legal, ethical manner and will be required to uphold the ethical code described in the bylaws or manual. Club times will be determined at the start of every semester based on the time when the largest number of people can attend.
 
