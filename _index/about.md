@@ -11,7 +11,7 @@ Hashdump is the computer security club at Colorado State University. We particip
 You can read our organization's constitution [here](constitution.html)
 
 ### Contact Us
-We meet every Tuesday at 6:30 PM in the Computer Science Building 315.
+We meet every Tuesday at 6:30 PM in the Computer Science Building 130.
 You can contact all current officers at `{{ d.emails["Officers"] }}`
 
 ### Officers
