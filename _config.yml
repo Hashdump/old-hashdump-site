@@ -1,6 +1,8 @@
 highlighter: rouge
 markdown: kramdown
 
+url: "https://hashdumpsecurity.org"
+
 future: true
 
 sass:
