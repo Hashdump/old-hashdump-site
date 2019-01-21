@@ -1,8 +1,6 @@
 highlighter: rouge
 markdown: kramdown
 
-url: "https://hashdumpsecurity.org"
-
 future: true
 
 sass:
@@ -13,7 +11,7 @@ relative_permalinks: false
 title: Hashdump
 repository: https://github.com/Hashdump/hashdump.github.io
 timezone: America/Denver
-baseurl: ""
+baseurl: "https://hashdumpsecurity.org"
 
 permalink: /meetings/:year/:month/:day/:title:output_ext
 
