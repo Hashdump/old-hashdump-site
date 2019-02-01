@@ -9,14 +9,14 @@
       <th>News Links</th>
     </tr>
   </thead>
-  <tbody>{% for pastmeeting in site.summaries %}{% if include.max < 0 or include.max >= forloop.index %}
-    <tr>{% assign ms = pastmeeting.content | strip_newlines | size %}
-			<td>{% if ms != 0 or pastmeeting.url_external %}
-				<a {% if pastmeeting.url_external %}href="{{ pastmeeting.url_external }}" class="external" target="_blank"{% else %}href="{{ pastmeeting.url }}"{% endif %}>{% endif %}{{ pastmeeting.date | date: "%-d&nbsp;%B&nbsp;%Y" }}{% if ms != 0 %}</a>
+  <tbody>{% for meeting in site.summaries %}{% if include.max < 0 or include.max >= forloop.index %}
+    <tr>{% assign ms = meeting.content | strip_newlines | size %}
+			<td>{% if ms != 0 or meeting.url_external %}
+				<a {% if meeting.url_external %}href="{{ meeting.url_external }}" class="external" target="_blank"{% else %}href="{{ meeting.url }}"{% endif %}>{% endif %}{{ meeting.date | date: "%-d&nbsp;%B&nbsp;%Y" }}{% if ms != 0 %}</a>
 			{% endif %}</td>
-      <td>{{ pastmeeting.title }}</td>
-      <td>{{ pastmeeting.summary | markdownify }}</td>
-      <td>{{ pastmeeting.links | markdownify }}
+      <td>{{ meeting.title }}</td>
+      <td>{{ meeting.summary | markdownify }}</td>
+      <td>{{ meeting.links | markdownify }}
     </tr>
     {% endif %}{% endfor %}
   </tbody>
