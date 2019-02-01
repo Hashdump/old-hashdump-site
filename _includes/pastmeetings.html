@@ -9,7 +9,7 @@
       <th>News Links</th>
     </tr>
   </thead>
-  <tbody>{% for meeting in site.posts | where description != blank %}{% if include.max < 0 or include.max >= forloop.index %}
+  <tbody>{% for meeting in site.posts | where meeting.description != blank %}{% if include.max < 0 or include.max >= forloop.index %}
     <tr>{% assign ms = meeting.content | strip_newlines | size %}
 			<td>{% if ms != 0 or meeting.url_external %}
 				<a {% if meeting.url_external %}href="{{ meeting.url_external }}" class="external" target="_blank"{% else %}href="{{ meeting.url }}"{% endif %}>{% endif %}{{ meeting.date | date: "%-d&nbsp;%B&nbsp;%Y" }}{% if ms != 0 %}</a>
