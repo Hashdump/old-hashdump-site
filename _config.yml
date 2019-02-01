@@ -30,6 +30,9 @@ defaults:
     values:
       layout: "page"
   - scope:
+      path: "pastmeetings"
+      layout: "pastmeeting"
+  - scope:
       path: "meetings"
     values:
       layout: "meeting"
