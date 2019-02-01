@@ -1,0 +1,21 @@
+{% unless include %}{% assign include = {} %}{% endunless %}
+{% unless include.max %}{% assign include.max = -1 %}{% endunless %}
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Meeting Summary</th>
+      <th>News Links</th>
+    </tr>
+  </thead>
+  <tbody>{% for pastmeeting in site.summaries %}{% if include.max < 0 or include.max >= forloop.index %}
+    <tr>{% assign ms = pastmeeting.content | strip_newlines | size %}
+			<td>{% if ms != 0 or pastmeeting.url_external %}
+				<a {% if pastmeeting.url_external %}href="{{ pastmeeting.url_external }}" class="external" target="_blank"{% else %}href="{{ pastmeeting.url }}"{% endif %}>{% endif %}{{ pastmeeting.date | date: "%-d&nbsp;%B&nbsp;%Y" }}{% if ms != 0 %}</a>
+			{% endif %}</td>
+      <td>{{ pastmeeting.title }}</td>
+      <td>{{ pastmeeting.tagline | markdownify }}</td>
+    </tr>
+    {% endif %}{% endfor %}
+  </tbody>
+</table>
