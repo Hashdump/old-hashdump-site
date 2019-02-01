@@ -4,6 +4,7 @@
   <thead>
     <tr>
       <th>Date</th>
+      <th>Title</th>
       <th>Meeting Summary</th>
       <th>News Links</th>
     </tr>
@@ -14,7 +15,8 @@
 				<a {% if pastmeeting.url_external %}href="{{ pastmeeting.url_external }}" class="external" target="_blank"{% else %}href="{{ pastmeeting.url }}"{% endif %}>{% endif %}{{ pastmeeting.date | date: "%-d&nbsp;%B&nbsp;%Y" }}{% if ms != 0 %}</a>
 			{% endif %}</td>
       <td>{{ pastmeeting.title }}</td>
-      <td>{{ pastmeeting.tagline | markdownify }}</td>
+      <td>{{ pastmeeting.summary | markdownify }}</td>
+      <td>{{ pastmeeting.links | markdownify }}
     </tr>
     {% endif %}{% endfor %}
   </tbody>
