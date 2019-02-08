@@ -5,8 +5,7 @@
     <tr>
       <th>Date</th>
       <th>Title</th>
-      <th>Meeting Summary</th>
-      <th>News Links</th>
+      <th>Meeting Summary & News Links</th>
     </tr>
   </thead>
   <tbody>{% for meeting in site.posts | where meeting.title == blank %}{% if include.max < 0 or include.max >= forloop.index %}
