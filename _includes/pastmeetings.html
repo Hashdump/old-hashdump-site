@@ -14,7 +14,6 @@
 			<td>{% if ms != 0 or meeting.url_external %}
 				<a {% if meeting.url_external %}href="{{ meeting.url_external }}" class="external" target="_blank"{% else %}href="{{ meeting.url }}"{% endif %}>{% endif %}{{ meeting.date | date: "%-d&nbsp;%B&nbsp;%Y" }}{% if ms != 0 %}</a>
 			{% endif %}</td>
-      <td>{{ meeting.title }}</td>
       <td>{{ meeting.tagline | markdownify }}</td>
       <td>{{ meeting.description | markdownify }}
     </tr>
