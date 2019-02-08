@@ -2,4 +2,5 @@
 layout: no-title-post
 tagline: <ul><li>Start of RMCCDC Practice.</li><li>Stephen Hayne introduced the exercise and what images the red and blue team will be working on.</li><li>Hayne also discussed several things each team will have to Harden/look into vulnerabilities about like SQL and ASP.</li><li>After his introduction, the club split into teams and each team worked out logistics.</li><li>Professor Joe Gersch brought up a interesting opportunity about the electrical and gas generators that have consoles that Hash Dump might be able to try to hack into. Will get more information at a later meeting.</li></ul>
 description: <ul><li><a href="https://www.bloomberg.com/news/articles/2019-01-29/apple-bug-lets-iphone-users-listen-in-on-others-via-facetime?srnd=premium">Apple FaceTime Listening Bug</a></li><li><a href="https://www.nytimes.com/2018/12/20/us/politics/us-and-other-nations-to-announce-china-crackdown.html">US accuses China of infiltrating tech</a></li><li><a href="https://collegian.com/2018/09/greg-myre-visits-csu-discusses-current-state-of-national-security/">Greg Myre visits CSU, discusses national security</a></li></ul>
+categories: Full
 ---
