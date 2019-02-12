@@ -17,6 +17,6 @@
       <td>{{ meeting.title }}</td>
       <td>{{ meeting.tagline | markdownify }}</td>
     </tr>
-    {% endif %}{% endif %}{% endfor %}
+    {% endunless %}{% endif %}{% endfor %}
   </tbody>
 </table>
